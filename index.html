@@ -19,12 +19,30 @@
 				
 				<header>
 					
-					<a class="logo" href="index.html"><img src="img/logo.png" width="" height="" alt="logo"></a>
-					
 					<nav class="navigation">
 						<ul class="navigation-list">
 							<li class="navigation-item">
+								<a class="navigation-link logo" href="index.html"><img src="img/logo.png" width="" height="" alt="logo"></a>
+							</li>
+							<li class="navigation-item">
 								<a class="navigation-link" href="#">Каталог</a>
+								<select name="catalog">
+									<option value="new">
+										<a class="navigation-link" href="#">Новинки</a>
+									</option>
+									<option value="creamy">
+										<a class="navigation-link" href="#">Сливочное</a>
+									</option>
+									<option value="sherbet">
+										<a class="navigation-link" href="#">Щербеты</a>
+									</option>
+									<option value="fruit-ice">
+										<a class="navigation-link" href="#">Фруктовый лед</a>
+									</option>
+									<option value="melorin">
+										<a class="navigation-link" href="#">Мелорин</a>
+									</option>
+								</select>
 							</li>
 							<li class="navigation-item">
 								<a class="navigation-link" href="#">Доставка и оплата</a>
@@ -39,9 +57,32 @@
 						<div class="user">  
 							<div class="user-search">
 								<a class="user-search-link" href="#"></a>
+								<form>
+									<input class="search" type="search" placeholder="Что ищем?">
+									<button class="btn-search" type="submit"  value=""></button>
+								</form>
 							</div>
 							<div class="user-login">
 								<a class="user-login-link" href="#">Вход</a>
+								<div class="modal-content modal-login">
+									<form class="login-form" action="https://" method="post">
+										<label>
+											<input class="user" type="text" name="e-mail" placeholder="Электронная почта">
+										</label>
+										<label>
+											<input class="user" type="text" name="password" placeholder="Пароль">
+										</label>
+										<button class="btn" type="submit">Войти</button>
+										<div class="login-link">
+											<a class="no-password">
+												Забыли пароль?
+											</a>
+											<a class="check-in">
+												Новая регистрация
+											</a>
+										</div>
+									</form>
+							  </div>
 							</div>  
 							<div class="user-cart">
 								<a class="user-cart-link" href="#">Пусто</a>
@@ -103,37 +144,49 @@
 					</section>
 					
 					<section class="section-main goods">
-						<div class="goods-item">
+						<div class="goods-item hit">
 							<p class="goods-item-price">
 								310 р/кг
 							</p>
 							<a class="goods-item-name">
 								Сливочное с апельсиновым джемом и цитрусовой стружкой 
 							</a>
+							<div class="modal-look">
+							  <a href="#" class="look btn">Быстрый просмотр</a>
+							</div>
 						</div>
-						<div class="goods-item">
+						<div class="goods-item hit">
 							<p class="goods-item-price">
 								380 р/кг
 							</p>
 							<a class="goods-item-name">
 								Сливочно-кофейное с кусочками шоколада
 							</a>
+							<div class="modal-look">
+							  <a href="#" class="look btn">Быстрый просмотр</a>
+							</div>
 						</div>
-						<div class="goods-item">
+						<div class="goods-item hit">
 							<p class="goods-item-price">
 								355 р/кг
 							</p>
 							<a class="goods-item-name">
 								Сливочно-клубничное с присыпкой из белого шоколада
 							</a>
+							<div class="modal-look">
+							  <a href="#" class="look btn">Быстрый просмотр</a>
+							</div>
 						</div>
-						<div class="goods-item">
+						<div class="goods-item hit">
 							<p class="goods-item-price">
 								415 р/кг
 							</p>
 							<a class="goods-item-name">
 								Сливочное крем-брюле с карамельной подливкой
 							</a>
+							<div class="modal-look">
+							  <a href="#" class="look btn">Быстрый просмотр</a>
+							</div>
 						</div>
 					</section>
 					
@@ -187,6 +240,24 @@
 							<a class="map-link btn">
 								Форма обратной связи
 							</a>
+							<div class="modal-content modal-content-mail">
+								<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+								<h3 class="modal-content-mail-name">
+									Мы обязательно вам ответим!
+								</h3>
+								<form class="mail-form" action="https://echo.htmlacademy.ru" method="post">
+									<label>
+										<input class="user" type="text" name="user-name" placeholder="Как ввас зовут?">
+									</label>
+									<label>
+										<input class="user-mail" type="text" name="e-mail" placeholder="Ваша почта для ответа?">
+									</label>
+									<label>
+										<textarea name="comment" id="comment-field" rows="5" placeholder="Напишите что-нибудь..."></textarea>
+									</label>
+									<button class="btn" type="submit">Отправить</button>
+								</form>
+							</div>
 						</div>
 					</section>
 					
