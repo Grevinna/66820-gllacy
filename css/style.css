@@ -12,12 +12,15 @@ h1 {
   font-size: 35px;
   color: #000000;
   font-weight: bold;
+  margin: 0px;
 }
 
 h2 {
-  font-size: 24px;
-  color: #000000;
+  font-size: 35px;
+  color: #ffffff;
   font-weight: bold;
+  margin: 0px;
+  line-height: 1;
 }
 
 .btn {
@@ -30,7 +33,7 @@ h2 {
   vertical-align: top;
   background-image: linear-gradient(#f26843, #db4c38);
   border-radius: 25px;
-  padding: 10px 20px;
+  padding: 10px 22px;
   color: #ffffff;
   text-align: center;
   vertical-align: top;
@@ -87,7 +90,7 @@ h2 {
 
 .content-wrapper {
   width: 100%;
-	max-width: 1200px;
+	max-width: 1146px;
   min-width: 940px;
   margin: 0 auto;
   padding: 0 25px;
@@ -236,7 +239,8 @@ h2 {
   position: relative;
   text-align: center;
   color: #ffffff;
-  margin-top: 250px
+  margin-top: 270px;
+  margin-bottom: 40px;
 }
 
 .slide {
@@ -324,6 +328,114 @@ h2 {
 
 
 
+.section-main {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+
+/*stocks*/
+
+
+.stock {
+  position: relative;
+  box-sizing: border-box;
+  width: 49%;
+  min-height: 229px;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.raspberries {
+  background-image: url("../img/raspberries.jpg");
+}
+
+.chocolate {
+  background-image: url("../img/chocolate.jpg");
+}
+
+.stock-link {
+  position: absolute;
+  right: 20px;
+  bottom: 25px;
+}
+
+
+/*goods*/
+
+
+.goods-item {
+  position: relative;
+  margin-right: 2%;
+  text-align: center;
+}
+
+.goods-price {
+  position: absolute;
+  top:50%;
+  font-size: 46px;
+  font-weight: 700;
+}
+
+.goods-name {
+  color: #ffffff;
+}
+
+
+
+/*promo*/
+
+.promo {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  background-image: url("../img/wafer.jpg");
+  padding: 30px 20px 10px;
+}
+
+.promo-name {
+  font-size: 24px;
+  font-weight: 600;
+  color: #000000;
+  margin: 0px;
+  margin-bottom: 12px;
+}
+
+.promo-text {
+  position: relative;
+  width: 43%;
+  margin-left: 55px;
+  color:  #000000;
+}
+
+.cow::before {
+  transform: translate(-55px, -25%);
+  width: 48px;
+  height: 49px;
+  background-position: -10px -330px;
+}
+
+.ice::before {
+  transform: translate(-55px, -25%);  
+  width: 49px;
+  height: 49px;
+  background-position: -10px -565px;
+}
+
+.sheet::before {
+  transform: translate(-55px, -25%);
+  width: 49px;
+  height: 49px;
+  background-position: -10px -1196px;
+}
+
+.thermometer::before {
+  transform: translate(-55px, -25%);
+  width: 48px;
+  height: 49px;
+  background-position: -10px -1265px;
+}
 
 
 
@@ -331,46 +443,22 @@ h2 {
 
 
 
+.strawberry {
+  background-image: url("../img/strawberry.jpg");
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.mail-field {
+  border: 10px solid rgba(0, 0, 0, 0);
+  border-radius: 20px;
+  border-image-slice: 12;
+  border-image-source:
+    url("../img/mail-field.jpg");
+  background-clip: content-box;
+  background-color: #ffffff;
+  color: #000000;
+   border-image-width: auto;
+}
 
 
 
