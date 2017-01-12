@@ -11,48 +11,90 @@
 		
 		<div class="content-wrapper">
 		
-			<header>
+			<header class="header">
+					
+        <nav class="navigation">
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a class="navigation-link logo" href="index.html"><img src="img/logo.png" width="" height="" alt="logo"></a>
+            </li>
+            <li class="navigation-item  dropdown">
+              <a class="navigation-link" href="inner.html">Каталог</a>
+              <ul class="catalog dropdown-block hidden">
+                <li value="new">
+                  <a class="catalog-link" href="#">Новинки</a>
+                </li>
+                <li value="creamy">
+                  <a class="catalog-link" href="#">Сливочное</a>
+                </li>
+                <li value="sherbet">
+                  <a class="catalog-link" href="#">Щербеты</a>
+                </li>
+                <li value="fruit-ice">
+                  <a class="catalog-link" href="#">Фруктовый лед</a>
+                </li>
+                <li value="melorin">
+                  <a class="catalog-link" href="#">Мелорин</a>
+                </li>
+              </ul>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Доставка и оплата</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">О компании</a>
+            </li>
+          </ul>
+        </nav>
 
-				<nav class="navigation">
-					<ul class="navigation-list">
-						<li class="navigation-item">
-							<a class="navigation-link logo" href="index.html"><img src="img/logo.png" width="" height="" alt="logo"></a>
-						</li>
-						<li class="navigation-item">
-							<a class="navigation-link" href="#">Каталог</a>
-						</li>
-						<li class="navigation-item">
-							<a class="navigation-link" href="#">Доставка и оплата</a>
-						</li>
-						<li class="navigation-item">
-							<a class="navigation-link" href="#">О компании</a>
-						</li>
-					</ul>
-				</nav>
+        <div class="user-call">
+          <div class="users">  
+            <div class="user user-search dropdown">
+              <a class="user-link user-search-link pseudo-image" href="#"></a>
+              <div class="dropdown-block hidden">
+                <form>
+                  <input class="search" type="search" placeholder="Что ищем?">
+                  <button class="btn-search" type="submit"  value=""></button>
+                </form>
+              </div>
+            </div>
+            <div class="user user-login dropdown">
+              <a class="user-link user-login-link pseudo-image" href="#">Вход</a>
+              <div class="dropdown-block hidden">
+                <form class="login-form" action="https://" method="post">
+                  <label>
+                    <input class="user" type="text" name="e-mail" placeholder="Электронная почта">
+                  </label>
+                  <label>
+                    <input class="user" type="text" name="password" placeholder="Пароль">
+                  </label>
+                  <button class="btn" type="submit">Войти</button>
+                  <div class="login-link">
+                    <a class="no-password">
+                      Забыли пароль?
+                    </a>
+                    <a class="check-in">
+                      Новая регистрация
+                    </a>
+                  </div>
+                </form>
+              </div>
+            </div>  
+            <div class="user user-cart">
+              <a class="user-link user-cart-link  pseudo-image" href="#">Пусто</a>
+            </div>
+          </div> 
+          <div class="call">
+            <p class="call-time">
+              С 10 до 20, ежедневно
+            </p>
+            <p class="call-number">
+              8 812 450-25-25
+            </p>
+          </div>
+        </div>
 
-				<div class="user-call">
-					<div class="user">  
-						<div class="user-search">
-							<a class="user-search-link" href="#"></a>
-						</div>
-						<div class="user-login">
-							<a class="user-login-link" href="#">Вход</a>
-						</div>  
-						<div class="user-cart">
-							<a class="user-cart-link" href="#">Пусто</a>
-						</div>
-					</div> 
-					<div class="call">
-						<p class="call-time">
-							С 10 до 20, ежедневно
-						</p>
-						<p class="call-number">
-							8 812 450-25-25
-						</p>
-					</div>
-				</div>
-
-			</header>
+      </header>
 
 			<main>
 				<section class="section-main section-breadcrumbs">
@@ -75,7 +117,7 @@
 						Сливочное мороженое
 					</h1>
 
-					<form action="form.php" method="get">
+					<form class="form" action="form.php" method="get">
 
 						<div class="form-sort">
 							<h2 class="form-name">
@@ -304,17 +346,17 @@
 
 			</main>
 
-			<footer>
+			<footer class="footer">
 
 				<section class="footer-social">
-					<a class="social-btn social-btn-tw" href="#">Твиттер</a>
-					<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-					<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-					<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+					<a class="social-btn social-btn-tw pseudo-image" href="#">Твиттер</a>
+					<a class="social-btn social-btn-inst pseudo-image" href="#">Инстаграм</a>
+					<a class="social-btn social-btn-fb pseudo-image" href="#">Фейсбук</a>
+					<a class="social-btn social-btn-vk pseudo-image" href="#">Вконтакте</a>
 				</section>
 
 				<section class="footer-navigation">
-					<a href="#">Для поставщиков</a>
+					<a class="pseudo-image heart" href="#">Для поставщиков</a>
 					<a href="#">Наши докуметны</a>
 					<a href="#">О приизводстве</a>
 					<a href="#">Экологические стандарты</a>

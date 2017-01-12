@@ -441,14 +441,35 @@ h2 {
 
 
 
-
+/*.strawberry*/
 
 .strawberry {
   background-image: url("../img/strawberry.jpg");
+  min-height: 220px;
+}
+
+.stock-new {
+  color: #000000;
+  margin: 0px;
+  margin-bottom: 10px;
+}
+
+.stock-link-ref {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 300px;
+  color: #000000;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+  
 }
 
 
+/*.mail-field*/
+
 .mail-field {
+  min-height: 220px;
   border: 10px solid rgba(0, 0, 0, 0);
   border-radius: 20px;
   border-image-slice: 12;
@@ -457,8 +478,177 @@ h2 {
   background-clip: content-box;
   background-color: #ffffff;
   color: #000000;
-   border-image-width: auto;
+  border-image-width: 10px;
 }
+
+
+
+
+
+/*.map*/
+
+.map {
+  background-image: url(../img/map.jpg);
+  min-height: 431px;
+}
+
+.map-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.map-info {
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  color: #000000;
+  width: 300px;
+  min-height: 310px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  padding: 20px;
+  line-height: 1.5;
+  margin: 65px 0px;
+}
+
+
+
+
+/*footer*/
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+  min-height: 104px;
+}
+
+
+
+
+
+.social-btn {
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  font-size: 0;
+  vertical-align: top;
+  text-decoration: none;
+  border: 5px solid;
+  border-radius: 50%;
+  border-color: rgba(255,255,255,0.15);
+  background-color: rgba(255,255,255,0.2);
+  margin: 5px;
+}
+
+
+.social-btn-tw::before {
+  width: 33px;
+  height: 32px;
+  background-position: -10px -1334px;
+}
+
+
+.social-btn-inst::before {
+  width: 32px;
+  height: 32px;
+  background-position: -10px -740px;
+}
+
+.social-btn-fb::before {
+  width: 32px;
+  height: 32px;
+  background-position: -10px -399px;
+}
+
+
+.social-btn-vk::before {
+  width: 32px;
+  height: 32px;
+  background-position: -10px -1386px;
+}
+
+
+
+.footer-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  width: 350px;
+}
+
+
+.heart::before {
+  width: 15px;
+  height: 13px;
+  background-position: -10px -451px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*inner*/
+
+.breadcrumbs {
+  display: flex;
+}
+
+
+.breadcrumbs-item {
+  list-style-type: none;
+  margin-right: 40px;
+}
+
+.breadcrumbs-link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+
+
+.main-name {
+  color: #ffffff;
+}
+
+.sorting-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+
+.form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.form-name {
+  font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
